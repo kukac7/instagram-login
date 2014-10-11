@@ -1,0 +1,12 @@
+html
+	head
+		title instagram
+	body
+		if user
+			h1 hello #{user.username}
+			p
+				a(href="/account") account
+		else
+			h1 welcome, login!
+			p
+				a(href="/login") login
